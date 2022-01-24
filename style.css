@@ -39,3 +39,144 @@ a {
   list-style: none;
   color: inherit;
 }
+
+/* Nav */
+
+nav {
+  background-color: var(--light);
+}
+
+.container {
+  max-width: 1200px;
+  color: var(--mid);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
+.toggle-collapse {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--dark);
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.toggle-collapse:hover {
+  color: var(--dark);
+}
+
+.navbar-collapse {
+  background-color: var(--dark);
+  height: 0vh;
+  transition: 250ms all ease-in;
+  overflow-y: hidden;
+  background-image: url(./images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.navbar-collapse.show {
+  height: calc(100vh - 150px);
+}
+
+.navbar-nav {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+  color: var(--light);
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.nav-item a {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav-button {
+  background: transparent;
+  border: 2px solid var(--light);
+  color: var(--light);
+  text-transform: uppercase;
+  padding: 1rem 7rem;
+  font-weight: 500;
+}
+
+.nav-button:hover {
+  background: var(--light);
+  color: var(--primary);
+}
+
+/* Hero */
+
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--primary);
+  background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+  background-size: 50%;
+  background-position: left;
+  background-repeat: no-repeat;
+  color: var(--light);
+  text-align: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.hero-copy {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: 0 1rem;
+}
+
+.hero-btn {
+  background: transparent;
+  color: var(--light);
+  padding: 1rem 2rem;
+  border: 1px solid var(--light);
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+.hero-btn:hover {
+  background: var(--light);
+  color: var(--primary);
+}
+
+.hero-photo img {
+  width: 100%;
+}
+
+/* Different Section */
+
+/* @media screen and (max-width: 350px) {
+} */
